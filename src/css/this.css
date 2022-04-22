@@ -1,0 +1,58 @@
+.dashboard {
+  width: 100%;
+  padding: 0.5rem 1rem 0.4rem 1rem; 
+  text-align: center; 
+  background-color: var(--color-primary-light);
+  margin-bottom: 2rem;
+}
+.meter {
+  margin: 0rem 1rem;
+}
+
+.edit {
+  flex: 0 0 auto;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.left {
+
+}
+.right {
+
+} 
+.label {
+  margin: 1rem 0rem;
+  font-weight: bold;
+}
+.object {
+  margin-bottom: 1rem;
+}
+.process {
+  border:1px solid var(--color-gray-light);
+  margin-bottom: 1rem;
+}
+.step {
+  padding: 2rem 1rem 1rem 1rem;
+  margin-bottom: 1rem;
+}
+.option {
+  margin-bottom: 1rem;
+}
+.operate {
+  margin-bottom: 1rem;
+}
+
+.information {
+  width: 100%;
+  padding: 0.5rem 1rem 0.4rem 1rem; 
+  text-align: left; 
+  background-color: var(--color-primary-light);
+}
+
+.chart {
+  width: 100%;
+  height: 400px;
+}
+
+.table {
+}

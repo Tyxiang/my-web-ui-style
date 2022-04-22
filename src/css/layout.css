@@ -1,0 +1,74 @@
+/* 用来约束宽度 */
+.container {
+  /* overflow: hidden; */
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  background: var(--color-primary);
+  color: var(--color-primary-lighter);
+}
+header .logo {
+  float: none;
+  margin-top: 2rem;
+  font-size: 28px;
+}
+header .nav {
+  float: right;
+  margin-bottom: 0.5rem;
+}
+header .nav ul {
+  /* 解决导航偏右问题 */
+  padding: 0;
+  margin: 0;
+}
+header .nav ul li {
+  display: inline-block;
+  margin: 0rem 0.3rem;
+  font-weight: bold;
+}
+header .nav a {
+  color: var(--color-primary-lighter);
+}
+header .nav a:hover {
+  color: var(--color-primary-darker);
+}
+header .nav .active a {
+  color: var(--color-primary-darker);
+}
+
+main {
+  /* margin-top: 120px; */
+  flex: 1 0 auto;
+  /* padding: 1rem 0 0; */
+}
+main .nav {
+  text-align: center;
+  background: var(--color-primary-light);
+}
+
+footer {
+  /*首位必须为0，否则footer异常*/
+  /* flex: 0 0 auto; */
+  background: var(--color-primary);
+  color: var(--color-primary-light);
+  font-size: 0.9rem;
+  text-align: center;
+  padding: 0.5rem 0rem;
+}
+footer a {
+  color: var(--color-primary-lighter);
+  /* 换行不断词 */
+  /* display: inline-block;  */
+}
+footer a:hover {
+  color: var(--color-primary-darker);
+}
+footer .nav {
+  margin: 0.5rem 0;
+}
+footer .epilog {
+  margin: 1rem 0;
+}

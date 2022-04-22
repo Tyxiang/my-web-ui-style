@@ -1,0 +1,91 @@
+label,
+fieldset legend {
+  font-weight: bold;
+}
+
+input,
+button,
+select,
+textarea,
+fieldset,
+fieldset legend {
+  border: solid 1px var(--color-gray-light);
+  border-radius: 3px;
+  /* background: var(--color-gray-lighter); */
+  -webkit-transition: none 0.2s ease-in;
+  transition: none 0.2s ease-in;
+  -webkit-transition-property: border-color, background, box-shadow;
+  transition-property: border-color, background, box-shadow;
+}
+
+input,
+button,
+select,
+textarea {
+  padding: 0.2rem 0.6rem;
+  outline: 0 none;
+  font-size: 1rem;
+}
+
+input:focus,
+button:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 8px var(--color-primary);
+}
+
+input[type="button"]:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+button:focus,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover {
+  background: var(--color-gray-lighter);
+  cursor: pointer;
+}
+
+textarea,
+select[multiple] {
+  vertical-align: bottom;
+  overflow: auto;
+}
+
+fieldset {
+  padding: 1em;
+  background: var(--color-gray-lighter);
+}
+fieldset legend {
+  padding: 0 0.5em;
+}
+
+fieldset label,
+fieldset input,
+fieldset button,
+fieldset select,
+fieldset textarea {
+  margin: 0.2em 0.5em;
+}
+fieldset label:first-child,
+fieldset input:first-child,
+fieldset button:first-child,
+fieldset select:first-child,
+fieldset textarea:first-child {
+  margin-left: 0;
+}
+fieldset label:last-child,
+fieldset input:last-child,
+fieldset button:last-child,
+fieldset select:last-child,
+fieldset textarea:last-child {
+  margin-right: 0;
+}
+
+/* Firefox input size fix */
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
